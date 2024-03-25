@@ -1,0 +1,14 @@
+.notFound {
+  &__title {
+    text-align: center;
+    font-size: 45px;
+  }
+  &__link {
+    text-align: center;
+    font-size: 45px;
+    a {
+      color: rgb(168, 148, 228);
+      text-decoration: underline;
+    }
+  }
+}

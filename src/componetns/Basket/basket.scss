@@ -1,0 +1,129 @@
+.basket {
+  &__title {
+    margin-top: 29px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #1c1c27;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 13px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 28px 15px 18px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    width: 633px;
+    height: 218px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &__product {
+      display: flex;
+      &__item {
+        display: flex;
+        flex-direction: column;
+        .headphones {
+          width: 146px;
+          height: 136px;
+        }
+        .counter {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 25px;
+          margin-top: 19px;
+          &__znak {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            background-color: #ffce7f;
+            cursor: pointer;
+          }
+          &__count {
+            font-weight: 600;
+            font-size: 17px;
+            color: #000;
+          }
+        }
+      }
+      &__info {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-left: 24px;
+        .name {
+          font-weight: 500;
+          font-size: 17px;
+          color: #1c1c27;
+        }
+        .price {
+          margin-top: 12px;
+          font-weight: 600;
+          font-size: 15px;
+          color: #aaa;
+        }
+      }
+    }
+    &__buy {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: space-between;
+      .delItem {
+        cursor: pointer;
+      }
+      .totalPrice {
+        font-weight: 600;
+        font-size: 15px;
+        text-align: right;
+        color: #1c1c27;
+      }
+    }
+  }
+  &__order {
+    border-radius: 30px;
+    width: 348px;
+    height: 114px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
+
+    &__priceInfo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 16px 0 21px;
+      height: 57px;
+    }
+    &__all {
+      font-weight: 600;
+      font-size: 15px;
+      color: #000;
+    }
+    &__allPrice {
+      font-weight: 600;
+      font-size: 15px;
+      color: #000;
+    }
+    &__btn {
+      border-radius: 20px;
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
+      background: #101010;
+      width: 100%;
+      height: 65px;
+      color: white;
+      &:hover {
+        background: #353434;
+      }
+    }
+  }
+}
