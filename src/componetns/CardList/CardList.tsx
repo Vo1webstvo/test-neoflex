@@ -1,14 +1,23 @@
-import { headphones, werelles } from '../../data';
+import { useAppSelector, useAppDispatch } from '../../redux/hook';
+import { getHeadphones } from '../../redux/slice/headphonesSlice';
+import { useEffect } from 'react';
 import Card from '../Card/Card';
 
 import './cardList.scss';
 
 const CardList = () => {
-  const itemHeadphones = headphones.map((item) => {
+  const dispatch = useAppDispatch();
+  const { data } = useAppSelector((state) => state.heaadphones);
+
+  useEffect(() => {
+    dispatch(getHeadphones());
+  }, [dispatch]);
+
+  const itemHeadphones = data?.headphones?.map((item) => {
     return <Card key={item.id} items={{ ...item }} />;
   });
 
-  const itemWherelles = werelles.map((item) => {
+  const itemWherelles = data?.wirelles?.map((item) => {
     return <Card key={item.id} items={{ ...item }} />;
   });
 

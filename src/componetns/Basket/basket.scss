@@ -32,6 +32,10 @@
         .headphones {
           width: 146px;
           height: 136px;
+          &__img {
+            width: 100%;
+            height: 100%;
+          }
         }
         .counter {
           display: flex;
@@ -124,6 +128,50 @@
       &:hover {
         background: #353434;
       }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .basket {
+    &__wrapper {
+      width: 500px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .basket {
+    &__container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &__wrapper {
+      width: 600px;
+    }
+    &__order {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .basket {
+    &__wrapper {
+      width: 450px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .basket {
+    padding: 0 10px;
+    &__wrapper {
+      width: 300px;
+    }
+    &__order {
+      width: 300px;
     }
   }
 }

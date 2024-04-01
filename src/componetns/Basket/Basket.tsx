@@ -20,7 +20,7 @@ const Basket = () => {
         <div className="basket__wrapper__product">
           <div className="basket__wrapper__product__item">
             <div className="headphones">
-              <img src={item.path} alt="headphones" />
+              <img className="headphones__img" src={item.path} alt="headphones" />
             </div>
             <div className="counter">
               <span className="counter__znak" onClick={() => dispatch(decrCount(item.id))}>
